@@ -1,0 +1,88 @@
+@font-face {
+  font-family: supernovaregular;
+  src: url(../fonts/supernova-personal-used-bf654da72b6232e-webfont.woff2);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "supernovaregular", sans-serif;
+  height: 100vh;
+}
+
+#video_background {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  opacity: 0.8;
+}
+
+.title {
+  font-size: 5rem;
+  margin-top: 3rem;
+}
+
+.btn_container {
+  display: flex;
+  gap: 5rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+}
+
+#rock {
+  background: url("../img/noun-fist-477918.png");
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+
+#paper {
+  background: url("../img/noun-hand-477922.png");
+  background-size: cover;
+  width: 245px;
+  height: 200px;
+}
+
+#scissors {
+  background: url("../img/noun-scissors-477919.png");
+  background-size: cover;
+  width: 280px;
+  height: 200px;
+}
+
+.round_winner {
+  font-size: 1.5rem;
+}
+
+.score_container {
+  display: flex;
+  gap: 3rem;
+  font-size: 3rem;
+}
+
+.game_winner {
+  font-size: 1.5rem;
+}
